@@ -1,36 +1,74 @@
-# 📈 NSE Stock Research & Analysis System
+# 📊 Agentic Equity Research System
 
-A sophisticated multi-agent AI system for analyzing Indian NSE-listed stocks using real-time data, technical indicators, news sentiment, and advanced AI reasoning.
+An AI-powered, multi-agent equity research system for analyzing Indian NSE-listed stocks using market data, technical indicators, news sentiment, and LLM-based reasoning.
 
-## 🌟 Features
+This project is designed as a **research and decision-support tool**, showcasing how autonomous agents can collaborate to generate structured equity insights.
+
+> ⚠️ **Disclaimer:** This project is for educational and research purposes only. It is **not financial advice**. Trading and investing involve risk.
+
+---
+
+## 🚀 Key Capabilities
 
 ### 🤖 Multi-Agent Architecture
-- **Stock Finder Agent**: Identifies promising NSE stocks based on liquidity, market cap, and momentum
-- **Market Data Agent**: Gathers real-time pricing, volume, and technical indicators  
-- **News Analyst Agent**: Analyzes recent news sentiment and market impact
-- **Recommendation Agent**: Provides actionable BUY/SELL/HOLD recommendations with target prices
 
-### 📊 Advanced Analytics
-- Real-time NSE stock data integration
-- Technical indicators (RSI, Moving Averages, MACD)
-- Volume and volatility analysis
-- News sentiment classification
-- Risk-reward assessment
+The system is composed of specialized agents, each responsible for a distinct research function:
 
-### 🎯 Smart Recommendations
-- Specific entry/exit price points
-- Stop-loss levels and risk management
-- Confidence scoring for each recommendation
-- Time horizon-based analysis (short-term to medium-term)
+- **🔍 Stock Finder Agent**  
+  Identifies liquid and high-momentum NSE stocks based on basic screening rules.
 
-### 🎨 Modern UI
-- Clean, responsive Streamlit interface
-- Interactive charts and visualizations
-- Real-time status updates
-- CSV export functionality
-- Mobile-friendly design
+- **📈 Market Data Agent**  
+  Fetches price and volume data and computes technical indicators such as:
+  - RSI
+  - Moving Averages
+  - MACD
+  - Volatility & volume trends
 
-## 🚀 Quick Start
+- **📰 News Analysis Agent**  
+  Analyzes recent stock-related news and evaluates sentiment and potential market impact.
+
+- **💡 Recommendation Agent**  
+  Synthesizes technical, market, and sentiment inputs into actionable insights:
+  - BUY / HOLD / SELL bias
+  - Entry & exit levels
+  - Stop-loss suggestions
+  - Confidence scoring
+
+---
+
+## 📊 What Makes This System Useful
+
+- Real-time NSE market data integration  
+- LLM-powered reasoning across multiple agents  
+- Structured, explainable recommendations  
+- Modular design for easy extension  
+- Interactive UI built with Streamlit  
+- CSV export for offline research  
+
+---
+
+## 🖥️ User Interface
+
+- Clean and responsive **Streamlit** dashboard  
+- Interactive charts and indicators  
+- Live agent execution feedback  
+- Exportable research output  
+- Mobile-friendly layout  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Streamlit** (UI)
+- **LLMs (OpenAI-compatible)**
+- **Multi-agent orchestration**
+- **Technical analysis libraries**
+- **UV / pip for dependency management**
+
+---
+
+## ⚡ Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -39,24 +77,25 @@ A sophisticated multi-agent AI system for analyzing Indian NSE-listed stocks usi
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/rooneyrulz/agentic-stock-research-system
-   cd nse-stock-research-system
-   ```
+### 1️⃣ Clone the Repository
 
-2. **Install dependencies**
+```bash
+git clone https://github.com/nabojyoti/agentic-equity-research-system.git
+cd agentic-equity-research-system
+```
+
+2️⃣. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Set up environment variables**
+3️⃣. **Set up environment variables**
    ```bash
    cp .env.example .env
    # Edit .env with your API keys
    ```
 
-4. **Install Bright Data MCP**
+4️⃣. **Install Bright Data MCP**
    ```bash
    npm install -g @brightdata/mcp
    ```
@@ -192,6 +231,20 @@ Risk-Reward: 1:2.6 ratio
 - The Indian stock market involves substantial risk of loss
 - Do your own due diligence before making any investment decisions
 
+## 🧩 Extending the System
+
+You can easily add:
+
+New agents (e.g., fundamentals, sector analysis)
+
+Additional indicators
+
+Alternative LLM providers
+
+Backtesting modules
+
+Broker or paper-trading integrations
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see our contributing guidelines:
@@ -247,5 +300,3 @@ For support and questions:
 - **v1.2.0** - Enhanced recommendation parsing and visualization
 
 ---
-
-**Made with ❤️ for the Indian Stock Market Community**
