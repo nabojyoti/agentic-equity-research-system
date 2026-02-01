@@ -292,11 +292,4 @@ For support and questions:
    # Reinstall dependencies
    pip install -r requirements.txt --force-reinstall
    ```
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with multi-agent architecture
-- **v1.1.0** - Added Streamlit UI and export functionality  
-- **v1.2.0** - Enhanced recommendation parsing and visualization
-
 ---
